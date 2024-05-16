@@ -121,7 +121,7 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
 @implementation FSCalendar
 
 @dynamic selectedDate;
-@synthesize scopeGesture = _scopeGesture, swipeToChooseGesture = _swipeToChooseGesture;
+@synthesize scopeGesture = _scopeGesture, swipeToChooseGesture = _swipeToChooseGesture, preferredRowHeight = _preferredRowHeight;
 
 #pragma mark - Life Cycle && Initialize
 
@@ -937,6 +937,10 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
         }
     }
     return _preferredRowHeight;
+}
+
+- (void)setPreferredRowHeight:(CGFloat)preferredRowHeight {
+    _preferredRowHeight = preferredRowHeight;
 }
 
 - (BOOL)floatingMode
