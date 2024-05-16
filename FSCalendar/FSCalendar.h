@@ -515,7 +515,7 @@ IB_DESIGNABLE
  */
 - (void)handleScopeGesture:(UIPanGestureRecognizer *)sender;
 
-- (void)setPreferredRowHeight:(CGFloat)preferredRowHeight;
+@property (assign, nonatomic) BOOL isForceRowHeight;
 
 @end
 
