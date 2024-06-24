@@ -348,6 +348,11 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
 }
 #endif
 
+- (void)setSectionInsets:(UIEdgeInsets)sectionInsets {
+    _sectionInsets = sectionInsets;
+    self.collectionViewLayout.sectionInsets = sectionInsets;
+}
+
 - (CGSize)sizeThatFits:(CGSize)size
 {
     return [self sizeThatFits:size scope:self.transitionCoordinator.representingScope];

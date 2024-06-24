@@ -516,6 +516,7 @@ IB_DESIGNABLE
 - (void)handleScopeGesture:(UIPanGestureRecognizer *)sender;
 
 @property (assign, nonatomic) BOOL isForceRowHeight;
+@property (assign, nonatomic) UIEdgeInsets sectionInsets;
 
 @end
 
